@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Sales Manager</string>
+    <string name="string_introduce">Phần mềm quản lý bán hàng hiệu quả nhất</string>
+    <string name="string_loading">Loading...</string>
+    <string name="string_login">Login</string>
+    <string name="string_register">REGISTER</string>
+    <string name="string_sign_up">Sign Up</string>
+    <string name="string_forgot_your_password">Forgot your password?</string>
+    <string name="string_logo">SEMA</string>
+    <string name="string_email">Email</string>
+    <string name="string_password">Password</string>
+    <string name="string_or">HOẶC ĐĂNG KÝ</string>
+    <string name="string_version">Version</string>
+    <string name="string_confirm_the_password">Confirm the password</string>
+    <string name="string_back_login">Already registed? <u>Login now!</u></string>
+    <string name="string_confirm_password">Confirm password unsuccessful please re-enter </string>
+    <string name="string_input_err">Please in put </string>
+    <string name="string_registed_success">Registed account success</string>
+    <string name="string_registed_failed">Registed account failed</string>
+    <string name="string_resset_password">SEND EMAIL</string>
+    <string name="string_resset_password_complete">Complete password change. <u>Login now!</u></string>
+    <string name="string_invalid_email">Invalid email!</string>
+    <string name="string_send_email_success">Send email success!</string>
+    <string name="string_ok">OK</string>
+    <string name="string_err_connect">An error has occurred, please check your network connection again. Thank you</string>
+
+    //bottom Navigation
+    <string name="title_tong_quan">Tổng quan</string>
+    <string name="title_don_hang">Đơn hàng</string>
+    <string name="title_san_pham">Sản phẩm </string>
+    <string name="title_bao_cao">Báo cáo</string>
+    <string name="title_them">Thêm</string>
+
+    // Prodcut
+    <string name="string_list_product">Danh sách sản phẩm</string>
+    <string name="string_add_product">Thêm sản phẩm</string>
+    <string name="string_name_product">Tên sản phẩm</string>
+    <string name="string_code_product">Mã sản phẩm</string>
+    <string name="string_describe">Mô tả</string>
+    <string name="string_retail_prece">Giá bán lẻ</string>
+    <string name="string_wholesale_prices">Giá bán lẻ</string>
+    <string name="string_entry_price">Giá Nhập</string>
+
+    //warehouse
+    <string name="string_warehouse">Kho hàng</string>
+    <string name="string_unit">Đơn vị</string>
+    <string name="string_unit_count">Đơn vị tính</string>
+    <string name="string_mass">Khối lượng</string>
+    <string name="string_inventory">Tồn kho</string>
+    <string name="string_ware_sum">Đơn vị, khối lượng, tồn kho</string>
+    <string name="string_initialize_the_repository">Khởi tạo kho</string>
+    <string name="string_original_inventory">Tồn kho ban đầu</string>
+    <string name="string_cost_price">Giá vốn</string>
+
+    //Classify
+    <string name="string_classify">Phân loại</string>
+    <string name="string_product_type">Loại sản phẩm</string>
+    <string name="string_brand">Nhãn hiệu</string>
+    <string name="string_tag">Thẻ tags</string>
+    <string name="string_classify_sum">Loại sản phẩm, nhãn hiệu, thẻ Tags</string>
+
+    // Tax
+    <string name="string_tax_applied">Áp dụng thuế</string>
+    <string name="string_allowed_to_sell">Cho phép bán</string>
+
+    //Product version
+    <string name="string_product_version">Phiên bản sản phẩm</string>
+    <string name="string_product_content">Thêm thuộc tính để tạo ra nhiều phiên bản sản phẩm khác nhau với các lựa chọn như màu sắc, kích thước, chất liệu,...</string>
+    <string name="string_add_properties">Thêm thuộc tính</string>
+</resources>

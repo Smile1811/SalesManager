@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_image">80dp</dimen>
+    <dimen name="image_add_product">25dp</dimen>
+    <dimen name="img_out_right">50dp</dimen>
+    <dimen name="relative_ware">75dp</dimen>
+
+    <dimen name="activity_horizontal_margin_4dp">4dp</dimen>
+    <dimen name="activity_vertical_margin_4dp">4dp</dimen>
+    <dimen name="activity_horizontal_margin_8dp">8dp</dimen>
+    <dimen name="activity_vertical_margin_8dp">8dp</dimen>
+    <dimen name="activity_horizontal_margin_16dp">16dp</dimen>
+    <dimen name="activity_vertical_margin_16dp">16dp</dimen>
+    <dimen name="activity_horizontal_margin_32dp">32dp</dimen>
+    <dimen name="activity_vertical_margin_32p">32dp</dimen>
+    <dimen name="activity_horizontal_margin_48dp">48dp</dimen>
+    <dimen name="activity_vertical_margin_48p">48dp</dimen>
+    <dimen name="activity_horizontal_margin_64dp">64dp</dimen>
+    <dimen name="activity_vertical_margin_64p">64dp</dimen>
+
+
+</resources>

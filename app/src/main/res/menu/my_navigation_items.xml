@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/overview"
+        android:title="@string/title_tong_quan"
+        android:icon="@drawable/ic_home"
+        ></item>
+    <item android:id="@+id/order"
+        android:title="@string/title_don_hang"
+        android:icon="@drawable/ic_order"
+        ></item>
+    <item android:id="@+id/product"
+        android:title="@string/title_san_pham"
+        android:icon="@drawable/ic_product"
+        ></item>
+    <item android:id="@+id/statistical"
+        android:title="@string/title_bao_cao"
+        android:icon="@drawable/ic_statistical"
+        ></item>
+    <item android:id="@+id/more"
+        android:title="@string/title_them"
+        android:icon="@drawable/ic_app"
+        ></item>
+</menu>

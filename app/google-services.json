@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "204927541988",
+    "firebase_url": "https://salesmanager-c0bb8.firebaseio.com",
+    "project_id": "salesmanager-c0bb8",
+    "storage_bucket": "salesmanager-c0bb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204927541988:android:a28ec73db9c65a48",
+        "android_client_info": {
+          "package_name": "com.duykhanh.salesmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204927541988-s70jjodbup8dm0r017lu8l3lhlro3adu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duykhanh.salesmanager",
+            "certificate_hash": "c1d813592d8d9e5e6c83fc8428cd19ce1f0e0d6e"
+          }
+        },
+        {
+          "client_id": "204927541988-m338d0pdjhkoi4o516ujiti1g5hba3mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL2hX-AQYAiSndzuwoqdeZzQUrPLmLWuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204927541988-m338d0pdjhkoi4o516ujiti1g5hba3mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,13 +1,9 @@
 package com.duykhanh.salesmanager.View;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -73,7 +69,6 @@ public class IndexActivity extends AppCompatActivity {
         }
     };
     // end Gán sự kiện click cho mỗi button tương ứng với mỗi fragment
-
 
     private void loadFragment(Fragment fragment) {
         // load fragment

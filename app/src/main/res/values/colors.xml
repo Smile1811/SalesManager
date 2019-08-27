@@ -13,4 +13,5 @@
     <color name="colorGrey">#9B9A9A</color>
     <color name="colorGreyLight">#EEEEEE</color>
     <color name="colorGreyLightHeight">#E4FFFFFF</color>
+    <color name="colorRed">#E4FF0000</color>
 </resources>

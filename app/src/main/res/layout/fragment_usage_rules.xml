@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/store" />
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/string_logo"
+        android:textColor="@color/colorOrangred"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtIntroduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/calibri"
+        android:gravity="center"
+        android:text="@string/string_usage_rules_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+
+
+
+</RelativeLayout>

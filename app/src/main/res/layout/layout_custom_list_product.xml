@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+    android:layout_marginRight="@dimen/activity_horizontal_margin_4dp"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_4dp"
+    android:elevation="@dimen/activity_horizontal_margin_4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProductList"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/img_list_product_width"
+            android:layout_height="@dimen/img_list_product_height"
+            android:layout_margin="@dimen/activity_horizontal_margin_8dp"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/txtNameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
+            android:layout_toRightOf="@+id/imgProductList"
+            android:text="@string/string_name_product"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linearVersion"
+            android:layout_toRightOf="@+id/imgProductList"
+            android:layout_below="@+id/txtNameProduct"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtVersionProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_8dp"
+                android:text="@string/string_version"
+                android:layout_below="@+id/txtProduct"
+                android:layout_toRightOf="@+id/imgProductList" />
+            <View
+                android:layout_width="0.5dp"
+                android:background="@color/colorBlack"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/txtCanSell"
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_height="wrap_content"
+                android:text="@string/string_can_sell"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

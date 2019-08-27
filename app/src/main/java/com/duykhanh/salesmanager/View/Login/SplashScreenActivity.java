@@ -1,24 +1,20 @@
-package com.duykhanh.salesmanager.View;
+package com.duykhanh.salesmanager.View.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.duykhanh.salesmanager.Controller.WIFI.ConnectionReceiver;
 import com.duykhanh.salesmanager.R;
-import com.duykhanh.salesmanager.View.Login.LoginActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

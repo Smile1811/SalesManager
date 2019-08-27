@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.crud.AddProductActivity">
+    tools:context=".View.crud.DetailProductActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <include
             android:id="@+id/iclAddProduct"
-            layout="@layout/layout_toolbar_add_product" />
+            layout="@layout/layout_toolbar_detail_list_product" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
@@ -30,32 +31,14 @@
 
                 //image
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardImageProduct"
-                    android:layout_width="@dimen/card_image"
-                    android:layout_height="@dimen/card_image"
-                    android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
-                    android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
-                    android:layout_marginBottom="@dimen/activity_horizontal_margin_16dp"
-                    android:backgroundTint="@color/colorGreyLightHeight"
-                    app:cardCornerRadius="10dp">
-
-                    <ImageView
-                        android:id="@+id/imgImageProduct"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_camera" />
-                </androidx.cardview.widget.CardView>
-
-
                 <ImageView
-                    android:id="@+id/imgProductOne"
+                    android:id="@+id/imgProductDetail"
                     android:layout_width="@dimen/card_image"
                     android:layout_height="@dimen/card_image"
+                    android:layout_alignParentLeft="true"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
                     android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
-                    android:layout_toRightOf="@id/cardImageProduct" />
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin_8dp" />
                 // end image
 
                 // Infomation
@@ -64,130 +47,153 @@
                     android:id="@+id/cardInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/cardImageProduct">
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.25dp"
-                        android:layout_alignParentTop="true"
-                        android:background="@color/colorBlack" />
+                    android:layout_below="@id/imgProductDetail">
 
                     <RelativeLayout
                         android:id="@+id/rInfoProduct"
                         android:layout_width="match_parent"
                         android:layout_height="350dp"
+                        android:layout_margin="@dimen/activity_horizontal_margin_8dp"
                         android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
                         android:background="@color/colorWhite"
                         android:orientation="vertical">
 
-
                         <LinearLayout
+                            android:id="@+id/lindetail1"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:padding="@dimen/activity_horizontal_margin_8dp">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
-                            <com.google.android.material.textfield.TextInputLayout
+
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:textColorHint="@color/colorGrey">
+                                android:text="@string/string_name_product"
+                                android:textSize="20sp" />
 
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/edtNameProduct"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:ellipsize="middle"
-                                    android:fontFamily="@font/calibri"
-                                    android:hint="@string/string_name_product"
-                                    android:textSize="20sp" />
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/edtCodeProduct"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/calibri"
-                                    android:hint="@string/string_code_product"
-                                    android:textSize="20sp" />
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/edtDiscribe"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/calibri"
-                                    android:hint="@string/string_describe"
-                                    android:textSize="20sp" />
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/txtNameDetailPr"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
-                                android:orientation="horizontal">
+                                android:layout_marginBottom="@dimen/activity_horizontal_margin_4dp"
+                                android:text="0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
 
-                                <com.google.android.material.textfield.TextInputLayout
-                                    android:layout_width="190dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginRight="@dimen/activity_horizontal_margin_16dp">
-
-                                    <com.google.android.material.textfield.TextInputEditText
-                                        android:id="@+id/edtRetailPrice"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/calibri"
-                                        android:hint="@string/string_retail_prices"
-                                        android:inputType="number"
-                                        android:textSize="17sp" />
-                                </com.google.android.material.textfield.TextInputLayout>
-
-                                <com.google.android.material.textfield.TextInputLayout
-                                    android:layout_width="190dp"
-                                    android:layout_height="wrap_content">
-
-                                    <com.google.android.material.textfield.TextInputEditText
-                                        android:id="@+id/edtWholesalePrices"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/calibri"
-                                        android:hint="@string/string_wholesale_prices"
-                                        android:inputType="number"
-                                        android:textSize="17sp" />
-                                </com.google.android.material.textfield.TextInputLayout>
-                            </LinearLayout>
-
-                            <com.google.android.material.textfield.TextInputLayout
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp">
+                                android:text="@string/string_code_product"
+                                android:textSize="20sp" />
 
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/edtEntryPrice"
+                            <TextView
+                                android:id="@+id/txtCodeDetailPr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                                android:layout_marginBottom="@dimen/activity_horizontal_margin_4dp"
+                                android:text="0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_describe"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtDiscribeDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                                android:layout_marginBottom="@dimen/activity_horizontal_margin_4dp"
+                                android:text="0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/ln1"
+                                    android:layout_width="195dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/string_retail_prices"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtRetailPriceDetailPr"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ln2"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/string_wholesale_prices"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtWholeasalePriceDetailPr"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                                        android:layout_marginBottom="@dimen/activity_horizontal_margin_4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <View
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/calibri"
-                                    android:hint="@string/string_entry_price"
-                                    android:inputType="number"
-                                    android:textSize="17sp" />
-                            </com.google.android.material.textfield.TextInputLayout>
+                                    android:layout_height="0.5dp"
+                                    android:layout_below="@+id/ln2"
+                                    android:layout_marginBottom="@dimen/activity_horizontal_margin_4dp"
+                                    android:background="@color/colorBlack" />
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/string_entry_price"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtEntryPriceDetailPr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                                android:text="0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20sp" />
+
+
                         </LinearLayout>
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.25dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/colorBlack" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
                 // end Infomation
@@ -230,7 +236,7 @@
                             android:layout_height="match_parent">
 
                             <RelativeLayout
-                                android:id="@+id/rWare"
+                                android:id="@+id/rWareDetail"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/relative_ware">
 
@@ -254,13 +260,13 @@
                                     android:textSize="17sp" />
 
                                 <TextView
-                                    android:id="@+id/txtInfoWare"
+                                    android:id="@+id/txtWareLength"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/txtWareHouse"
                                     android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
                                     android:layout_toRightOf="@+id/imgWareHouse"
-                                    android:text="@string/string_ware_sum"
+                                    android:text="@string/string_inventory_number"
                                     android:textColor="@color/colorBlack"
                                     android:textSize="20sp" />
 
@@ -275,10 +281,10 @@
                             </RelativeLayout>
 
                             <RelativeLayout
-                                android:id="@+id/rClassify"
+                                android:id="@+id/rClassifyDetail"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/relative_ware"
-                                android:layout_below="@id/rWare">
+                                android:layout_below="@id/rWareDetail">
 
                                 <ImageView
                                     android:id="@+id/imgClassify"
@@ -352,7 +358,7 @@
                             android:background="@color/colorBlack" />
 
                         <androidx.appcompat.widget.SwitchCompat
-                            android:id="@+id/swtTax"
+                            android:id="@+id/swtTaxDetail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
@@ -362,10 +368,10 @@
                             android:textSize="20sp" />
 
                         <androidx.appcompat.widget.SwitchCompat
-                            android:id="@+id/swtAlts"
+                            android:id="@+id/swtAltsDetail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/swtTax"
+                            android:layout_below="@id/swtTaxDetail"
                             android:paddingLeft="@dimen/activity_horizontal_margin_8dp"
                             android:text="@string/string_allowed_to_sell"
                             android:textSize="20sp" />
@@ -420,12 +426,9 @@
                             android:text="@string/string_product_content"
                             android:textSize="17sp" />
 
-                        <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
 
                         <TextView
-                            android:id="@+id/txtAddProperties"
+                            android:id="@+id/txtAddPropertiesDetail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/txtContentPrVersion"
@@ -445,7 +448,23 @@
                 </androidx.cardview.widget.CardView>
                 // end Product version
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/cardPrVersion"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin_32dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/txtDeleteProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/string_delete_product"
+                        android:textColor="@color/colorRed"
+                        android:textSize="20sp"/>
+                </androidx.cardview.widget.CardView>
             </RelativeLayout>
         </androidx.core.widget.NestedScrollView>
     </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

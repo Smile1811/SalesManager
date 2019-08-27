@@ -7,16 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.duykhanh.salesmanager.R;
-import com.duykhanh.salesmanager.View.AddProductActivity;
+import com.duykhanh.salesmanager.View.crud.AddProductActivity;
+import com.duykhanh.salesmanager.View.ListProductActivity;
 
 
 public class ProductFragment extends Fragment implements View.OnClickListener {
@@ -50,25 +49,18 @@ public class ProductFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Fragment fragment;
         switch (view.getId()) {
             case R.id.rAddProduct:
                 Intent iAddProduct = new Intent(getActivity(), AddProductActivity.class);
+                iAddProduct.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(iAddProduct);
                 break;
             case R.id.rListProduct:
-
+                Intent iListProdcut = new Intent(getActivity(), ListProductActivity.class);
+                iListProdcut.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(iListProdcut);
                 break;
         }
     }
-
-    // load Fragment
-    private void loadFragmentProduct(Fragment fragment) {
-        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.frame_container, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-    }
-    // end load Fragment
 
 }

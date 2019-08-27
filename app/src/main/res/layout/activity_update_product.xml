@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.crud.UpdateProductActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/iclUpdateProduct"
+            layout="@layout/layout_update_product" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImageUpdateProduct"
+                android:layout_width="@dimen/card_image"
+                android:layout_height="@dimen/card_image"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin_16dp"
+
+                android:backgroundTint="@color/colorGreyLightHeight"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgImageUpdateProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin_16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_camera" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imgImageUpdatePr"
+                android:layout_width="@dimen/card_image"
+                android:layout_height="@dimen/card_image"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
+                android:layout_toRightOf="@+id/cardImageUpdateProduct" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardImageUpdateProduct">
+
+                <RelativeLayout
+                    android:id="@+id/rInfoProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_4dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_horizontal_margin_8dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorGrey">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNameProductUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ellipsize="middle"
+                                android:fontFamily="@font/calibri"
+                                android:hint="@string/string_name_product"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin_8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtCodeProductUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/calibri"
+                                android:hint="@string/string_code_product"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin_8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDiscribeUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/calibri"
+                                android:hint="@string/string_describe"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="190dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin_16dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtRetailPriceUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/calibri"
+                                    android:hint="@string/string_retail_prices"
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="190dp"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtWholesalePricesUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/calibri"
+                                    android:hint="@string/string_wholesale_prices"
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin_8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtEntryPriceUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/calibri"
+                                android:hint="@string/string_entry_price"
+                                android:inputType="number"
+                                android:textSize="17sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorBlack" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

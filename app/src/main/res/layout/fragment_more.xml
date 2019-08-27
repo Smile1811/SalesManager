@@ -1,14 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:gravity="center"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    // User
 
-    <TextView
-        android:id="@+id/textView3"
-        android:gravity="center"
-        android:textSize="30sp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="More" />
-</LinearLayout>
+        android:layout_marginTop="@dimen/activity_horizontal_margin_16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUserget"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="@dimen/activity_horizontal_margin_8dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/txtUserDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                android:layout_toRightOf="@+id/imgUserget"
+                android:text="user"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtEmailDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUserDetail"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                android:layout_toRightOf="@id/imgUserget"
+                android:text="khanhldpd02377@fpt.edu.vn"
+                android:textColor="@color/colorGrey"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imgIconOut"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_8dp"
+                android:src="@drawable/ic_right" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    // end User
+
+    // Introduce
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardUser"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_32dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnIntroducePr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="@dimen/activity_horizontal_margin_8dp"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                    android:text="@string/string_introduce_product"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/lnIntroducePr"
+                android:layout_marginLeft="55dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/lnRulesOfUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="@dimen/activity_horizontal_margin_8dp"
+                    android:src="@drawable/ic_assignment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                    android:text="@string/string_usage_rules"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/lnRulesOfUser"
+                android:layout_marginLeft="55dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/lnPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="@dimen/activity_horizontal_margin_8dp"
+                    android:src="@drawable/ic_error" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                    android:text="@string/string_privacy_policy"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/lnPrivacyPolicy"
+                android:layout_marginLeft="55dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/lnSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="@dimen/activity_horizontal_margin_8dp"
+                    android:src="@drawable/ic_email_send" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                    android:text="@string/string_support"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    // end Introduce
+
+    // Version
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardSetting"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:id="@+id/lnVersion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="@dimen/activity_horizontal_margin_8dp"
+                android:src="@drawable/store" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:text="@string/string_version_present"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    // end Version
+
+    // Signout
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/cardVersion"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/string_sign_out"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+    //end Signout
+
+</RelativeLayout>

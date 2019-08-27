@@ -9,7 +9,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imgBackProduct"
+            android:id="@+id/imgBackUpdateProduct"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
@@ -22,12 +22,12 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/string_add_product"
+            android:text="@string/string_udpdate_product"
             android:textColor="@color/colorBlack"
             android:textSize="25sp" />
 
         <ImageView
-            android:id="@+id/imgCheckProduct"
+            android:id="@+id/imgCheckUpdateProduct"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"

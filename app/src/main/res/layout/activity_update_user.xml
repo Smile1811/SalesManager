@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.crud.UpdateUserActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <include
+            android:id="@+id/iclUpdateUser"
+            layout="@layout/layout_update_user" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImageUserUp"
+                android:layout_width="@dimen/card_image"
+                android:layout_height="@dimen/card_image"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin_16dp"
+                android:backgroundTint="@color/colorGreyLightHeight"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgChooseImageUp"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_camera" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imgshowUp"
+                android:layout_width="@dimen/card_image"
+                android:layout_height="@dimen/card_image"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_8dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16dp"
+                android:layout_toRightOf="@id/cardImageUserUp" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/relativeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="@dimen/activity_horizontal_margin_8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNameUser"
+                    android:hint="@string/string_name_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

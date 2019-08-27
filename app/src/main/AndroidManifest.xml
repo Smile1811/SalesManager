@@ -13,10 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.WareHouseActivity"
+        <activity android:name=".View.crud.UpdateUserActivity"
             android:theme="@style/AppThemeIndex"></activity>
         <activity
-            android:name=".View.AddProductActivity"
+            android:name=".View.crud.UpdateProductActivity"
+            android:theme="@style/AppThemeIndex" />
+        <activity
+            android:name=".View.crud.DetailProductActivity"
+            android:theme="@style/AppThemeIndex" />
+        <activity
+            android:name=".View.ListProductActivity"
+            android:theme="@style/AppThemeIndex" />
+        <activity
+            android:name=".View.WareHouseActivity"
+            android:theme="@style/AppThemeIndex" />
+        <activity
+            android:name=".View.crud.AddProductActivity"
             android:parentActivityName=".View.IndexActivity"
             android:theme="@style/AppThemeIndex" />
         <activity
@@ -29,7 +41,7 @@
             android:name=".View.IndexActivity"
             android:theme="@style/AppThemeIndex" />
         <activity
-            android:name=".View.SplashScreenActivity"
+            android:name=".View.Login.SplashScreenActivity"
             android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

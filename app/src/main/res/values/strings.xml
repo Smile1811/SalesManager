@@ -29,7 +29,7 @@
     <string name="title_don_hang">Đơn hàng</string>
     <string name="title_san_pham">Sản phẩm </string>
     <string name="title_bao_cao">Báo cáo</string>
-    <string name="title_them">Thêm</string>
+    <string name="title_them">Tài khoản</string>
 
     // Prodcut
     <string name="string_list_product">Danh sách sản phẩm</string>
@@ -37,8 +37,8 @@
     <string name="string_name_product">Tên sản phẩm</string>
     <string name="string_code_product">Mã sản phẩm</string>
     <string name="string_describe">Mô tả</string>
-    <string name="string_retail_prece">Giá bán lẻ</string>
-    <string name="string_wholesale_prices">Giá bán lẻ</string>
+    <string name="string_retail_prices">Giá bán lẻ</string>
+    <string name="string_wholesale_prices">Giá bán buôn</string>
     <string name="string_entry_price">Giá Nhập</string>
 
     //warehouse
@@ -47,6 +47,7 @@
     <string name="string_unit_count">Đơn vị tính</string>
     <string name="string_mass">Khối lượng</string>
     <string name="string_inventory">Tồn kho</string>
+    <string name="string_inventory_number">Tồn kho : 0</string>
     <string name="string_ware_sum">Đơn vị, khối lượng, tồn kho</string>
     <string name="string_initialize_the_repository">Khởi tạo kho</string>
     <string name="string_original_inventory">Tồn kho ban đầu</string>
@@ -67,4 +68,41 @@
     <string name="string_product_version">Phiên bản sản phẩm</string>
     <string name="string_product_content">Thêm thuộc tính để tạo ra nhiều phiên bản sản phẩm khác nhau với các lựa chọn như màu sắc, kích thước, chất liệu,...</string>
     <string name="string_add_properties">Thêm thuộc tính</string>
+
+    //List
+    <string name="string_can_sell">Có thể bán: 0</string>
+
+    //Detail
+    <string name="string_detail_product">Chi tiết sản phẩm</string>
+
+    // Update
+    <string name="string_udpdate_product">Sửa thông tin sản phẩm</string>
+    <string name="string_update_success">Sửa thông tin thành công</string>
+    <string name="string_update_failded">Sửa thông tin thất bại</string>
+
+    //Delete
+    <string name="string_delete_product">Xóa sản phẩm</string>
+
+    // Databse Firebase
+    <string name="db_product">SANPHAM</string>
+    <string name="db_image_product">HINHANHSP</string>
+
+    //More
+    <string name="string_introduce_product">Giới thiệu sản phẩm</string>
+    <string name="string_usage_rules">Quy định sử dụng</string>
+    <string name="string_privacy_policy">Chinh sách bảo mật</string>
+    <string name="string_support">Hỗ trợ</string>
+    <string name="string_version_present">Phiên bản hiện tại 1.0.0</string>
+    <string name="string_product_introduct_content">SEMA - Ứng dụng quản lý bán hàng MIỄN PHÍ cho cửa hàng bán lẻ và cửa hàng online.Sapo giúp chủ shop kiểm xoát số liệu kinh doanh chính xác, loại bỏ những sai sót trong việc bán hàng, quản lý cửa hàng và tiết kiệm chi phí đầu tư.</string>
+    <string name="string_usage_rules_content">Yêu cầu điện thoại chạy android 4.4 kitkat trở lên và yêu cầu truy cập mạng để có thể sử dụng app</string>
+    <string name="string_privacy_policy_content">Chúng tôi hiểu hoàn toàn rằng thông tin cá nhân của bạn là thuộc về bạn, vì vậy chúng tôi nỗ lực hết sức lưu trữ bảo mật và xử lý cẩn thận thông tin mà bạn chia sẻ với chúng tôi.</string>
+    <string name="string_support_content">Mọi thông tin chi tiết xin liên hệ email: khanhldpd02377@fpt.edu.vn</string>
+
+    // Detail user
+    <string name="string_user_information">THÔNG TIN TÀI KHOẢN</string>
+    <string name="string_name_user">Tên tài khoản</string>
+    <string name="string_phone">Phone</string>
+    <string name="string_Address">Địa chỉ</string>
+    <string name="string_sign_out">Đăng xuất tài khoản</string>
+    <string name="string_update_user">Cài đặt thông tin</string>
 </resources>
